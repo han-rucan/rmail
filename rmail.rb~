@@ -1,0 +1,18 @@
+require 'net/pop'
+
+Net::POP3.start('mail2.eleusi.com', 110,
+                'smx004', 'rm:aXK') do |pop|
+  if pop.mails.empty?
+    puts 'No mail.'
+  else
+    i = 0
+    pop.each_mail do |m|   # or "apop.mails.each ..."
+      File.open("inbox/#{i}", 'w') do |f|
+        f.write m.pop
+      end
+      #m.delete
+      i += 1
+    end
+    puts "#{pop.mails.size} mails popped."
+  end
+end
