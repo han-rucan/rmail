@@ -761,12 +761,7 @@ Comunicato Stampa: Sharon Gannon - Jivamukti Yoga - Tour Italiano - 7
 =?ISO-8859-1?Q?R:_Novit=E0_PHYL_Yoga_Spray?=
 R: Comunicato Stampa: Sharon Gannon - Jivamukti Yoga - Tour
 R: PHYL News Milano: gli appuntamenti di Ottobre
-Posta non consegnata - Undelivered mail - Rueckgabe nicht
-Delivery Status Notification
-DELIVERY FAILURE: User v_sivieri (v_sivieri@it.ibm.com) not listed
 CHIEDO RIMOZIONE LISTA [samantha.tiano@inwind.it]
-failure notice
-Delivery Status Notification (Failure)
 =?utf-8?Q?Re:_PHYL_News:_10_Ottobre_-_Convegno_e_Open_Day_-_il_r?=
 CHIEDO RIMOZIONE LISTA arzago1@alice.it
 CHIEDO RIMOZIONE LISTA eleonorabersani@libero.it
@@ -799,7 +794,6 @@ I: Sei invitato
 CHIEDO RIMOZIONE LISTA rcristina0655@gmail.com
 Comunicato stampa Fondo Amici di Paco - Allarme OMS sul consumo di
 [Resoconto di invio di MaxBulk Mailer #790] PHYL News: Autodifesa
-Undelivered Mail Returned to Sender
 Re: PHYL News: Autodifesa Psichica - 7/8 novembre @ Feltre (BL)
 [Resoconto di invio di MaxBulk Mailer #791] PHYL News: Autodifesa
 [Resoconto di invio di MaxBulk Mailer #792] PHYL News: Yoga
