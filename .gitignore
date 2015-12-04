@@ -2,3 +2,4 @@ setup.yml
 backup/*
 backup/
 *.txt
+*.*~
