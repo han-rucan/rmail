@@ -40,3 +40,7 @@ build/
 .rvmrc
 
 backup/*
+*.html
+*.csv
+/nohup.out
+*.sh
