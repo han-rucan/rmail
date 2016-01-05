@@ -49,9 +49,6 @@ conta = 0
 indirizzi = File.open(addresses,'r').each_line do |l|
   conta += 1
   appo = l.scan(/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i)
-
-  puts l
-  puts appo
   
   begin
     mail = Mail.deliver do
