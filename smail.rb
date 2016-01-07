@@ -47,6 +47,11 @@ interval = ARGV[5] || 0
 
 conta = 0
 indirizzi = File.open(addresses,'r').each_line do |l|
+  if l[0] == '#'
+    puts "skipping #{l}" 
+    next
+  end
+
   conta += 1
   appo = l.scan(/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i)
   
