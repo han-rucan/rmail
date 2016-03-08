@@ -8,6 +8,16 @@ def load_conf(serv)
   y[serv]
 end
 
+def sottrai_liste(fn1, fn2, fn=nil)
+  fn = "#{fn1.gsub('.','-')}---#{fn2.gsub('.','-')}.txt" unless fn
+  a1 = file2array(fn1)
+  a2 = file2array(fn2)
+
+  a = a1 - a2
+  
+  File.open(fn, 'w') {|f| f.write a.join("\n")}
+end
+
 def confronta_liste(fn1, fn2, fn=nil)
   fn = "#{fn1.gsub('.','-')}***#{fn2.gsub('.','-')}.txt" unless fn
   a1 = file2array(fn1)
@@ -86,6 +96,21 @@ indirizzi = {}
 rimozioni = {}
 delivery_notifications = {}
 subjects  = []
+
+if ARGV.include?('sottrai')
+  ix = ARGV.index('sottrai')
+  fn1 = ARGV[ix+1]
+  fn2 = ARGV[ix+2]
+  fn3 = ARGV[ix+3]
+
+  unless fn1 && fn2
+    puts "rmail sottrai file1 file2 file_esito"
+    exit
+  end
+
+  sottrai_liste(fn1, fn2, fn3)
+  exit
+end
 
 if ARGV.include?('confronta')
   ix = ARGV.index('confronta')
